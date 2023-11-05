@@ -1,0 +1,15 @@
+{
+    "mod": "PreyToLive-AllOpenZones-v1.0.5",
+    
+    "consoleLogs": false,
+    "allOpenZones": {
+        "customs": true,
+        "interchange": true,
+        "labs": true,
+        "lighthouse": true,
+        "reserve": true,
+        "shoreline": true,
+        "streets": true,
+        "woods": true
+    }
+}
