@@ -1,15 +1,16 @@
 {
     "name": "AllOpenZones",
-    "version": "1.0.5",
-    "main": "src/mod.js",
+    "version": "1.0.6",
+    "main": "src/AOZMain.js",
     "license": "MIT License",
     "author": "PreyToLive",
-    "akiVersion": "3.7.*",
+    "akiVersion": "~3.8",
     "scripts": {
         "setup:environment": "npm i",
-        "build:unzipped": "copyfiles -e \"./node_modules/**/*.*\" -e \"./dist/**/*.*\" -e \"./package-lock.json\" -e \"./tsconfig.json\" -e \"./README.txt\" -e \"./mod.code-workspace\" \"./**/*.*\" ./dist",
+        "build:compile": "tsc",
+        "build:unzipped": "copyfiles -e \"./node_modules/**/*.*\" -e \"./dist/**/*.*\" -e \"./package-lock.json\" -e \"./tsconfig.json\" -e \"./README.txt\" -e \"./types/**/*.*\" -e \"./mod.code-workspace\" \"./**/*.*\" ./dist",
         "zip:files": "cd dist/ && bestzip ../mod.zip *",
-        "build:zip": "npm run clean:environment && npm run build:unzipped && npm run zip:files",
+        "build:zip": "npm run clean:environment && npm run build:compile && npm run build:unzipped && npm run zip:files",
         "clean:environment": "node -e \"require('fs').rm('mod.zip', ()=>{})\" && node -e \"require('fs').rmdir('./dist/',{recursive:true},()=>{})\""
     },
     "devDependencies": {
