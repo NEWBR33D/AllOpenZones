@@ -1,5 +1,5 @@
 /* 
- * AllOpenZones v1.0.6
+ * AllOpenZones v1.0.7
  * MIT License
  * Copyright (c) 2023 PreyToLive
  */
@@ -83,6 +83,10 @@ export const openZonesMap = {
         "ZoneSubStorage"
     ],
     sandbox: [
+        "ZoneSandbox",
+        "ZoneSandSnipeCenter"
+    ],
+    sandbox_high: [
         "ZoneSandbox",
         "ZoneSandSnipeCenter"
     ],

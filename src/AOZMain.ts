@@ -1,5 +1,5 @@
 /* 
- * AllOpenZones v1.0.6
+ * AllOpenZones v1.0.7
  * MIT License
  * Copyright (c) 2023 PreyToLive
  */
@@ -9,9 +9,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 import { DependencyContainer } from "tsyringe";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { LoggerTypes } from "../enums/AOZEnumLogger";
 import { openZonesMap } from "./AOZExports";
 import pkg from "../package.json";
